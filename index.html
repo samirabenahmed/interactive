@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison Al Haouz</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="stylesK.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <div id="searchBox">
+            <label for="searchInput">Recherche :</label>
+            <input id="searchInput" type="text" placeholder="Entrez une adresse ou un lieu" />
+        </div>
+        <button id="heatmapToggle" class="menu-button">ON/OFF Heatmap</button>
+        <button id="diffToggle" class="menu-button">ON/OFF Bâtiments Non Touchés</button>
+        <button id="themeToggle" class="menu-button">Mode Black/Light</button>
+    </div>
+    <div id="container">
+        <div id="mapBefore"></div>
+        <div class="separator"></div>
+        <div id="mapAfter"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="scriptsK.js"></script>
+</body>
+</html>
